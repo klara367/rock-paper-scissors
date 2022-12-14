@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600;700&display=swap">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  
+  <title>Frontend Mentor | Rock, Paper, Scissors</title>
+
+</head>
+<body>
+  <header class="header">
+    <h1 class="heading">ROCK <br> PAPER <br> SCISSORS</h1>
+    <div class="score-bg">
+      <p class="score-text">SCORE</p>
+      <p class="score">0</p>
+    </div>
+  </header>
+  <main>
+    <div class="game">
+      <button class="btn align-end" value="rock" data-choice="rock">
+        <div class="btn-bdr rock-bdr">
+          <div class="btn-bg">
+            <img src="./images/icon-rock.svg" alt="rock" class="rock rock-btn">
+          </div>
+        </div>
+      </button>
+      <button class="btn" value="paper" data-choice="paper">
+        <div class="btn-bdr paper-bdr">
+          <div class="btn-bg">
+            <img src="./images/icon-paper.svg" alt="paper" class="paper paper-btn">
+          </div>
+        </div>
+      </button>
+      <button class="btn align-center" value="scissors" data-choice="scissors">
+        <div class="btn-bdr scissors-bdr">
+          <div class="btn-bg">
+            <img src="./images/icon-scissors.svg" alt="scissors" class="scissors scissors-btn">
+          </div>
+        </div>
+      </button>
+    </div>
+    <div class="display-result">
+      <div>
+        <p class="picked picked-padding">YOU PICKED</p>
+        <div class="your-pick">
+        </div>
+      </div>
+      <div class="display-winner">
+        <p class="winner"></p>
+        <button class="play-again">PLAY AGAIN</button>
+      </div>
+      <div class="third-cl">
+        <p class="picked">THE HOUSE PICKED</p>
+        <div class="house house-animation">
+        </div>
+      </div>
+    </div>
+  </main>
+  <!-- <footer class="footer">
+    <button class="footer__btn">RESET</button>
+  </footer> -->
+  <script src="script.js"></script>
+</body>
+</html>
